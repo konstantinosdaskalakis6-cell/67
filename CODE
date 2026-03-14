@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASKALAKIS - Piraeus Bank</title>
+    <link rel="icon" href="TRAPEZA.jpg">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background-color: #004080;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .button-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+        .color-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 10px;
+        }
+        .reset-btn {
+            background-color: #666;
+            color: white;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ddd;
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #004080;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to DASKALAKIS</h1>
+    </header>
+    <div class="container">
+        <p>This is a professional webpage for DASKALAKIS, proudly associated with Piraeus Bank.</p>
+        
+        <img src="TRAPEZA.jpg" alt="Piraeus Bank" style="max-width: 100%; height: auto; display: block; margin: 20px auto;">
+        
+        <h2>Interactive Features</h2>
+        <button onclick="alert('Γεια σας από την Piraeus Bank!')">Say Hello</button>
+        <button onclick="window.open('https://www.piraeusbank.gr/');">Visit Piraeus Bank</button>
+        
+        <hr>
+        <h2>Change Background Color</h2>
+        <div class="button-group color-buttons">
+            <button onclick="document.body.style.backgroundColor = 'magenta';">Magenta</button>
+            <button onclick="document.body.style.backgroundColor = 'lightblue';">Light Blue</button>
+            <button onclick="document.body.style.backgroundColor = 'darkgreen';">Dark Green</button>
+            <button onclick="document.body.style.backgroundColor = 'silver';">Silver</button>
+            <button onclick="document.body.style.backgroundColor = 'lightyellow';">Light Yellow</button>
+            <button onclick="document.body.style.backgroundColor = 'red';">Red</button>
+            <button onclick="document.body.style.backgroundColor = 'lightpink';">Light Pink</button>
+            <button onclick="document.body.style.backgroundColor = 'royalblue';">Royal Blue</button>
+            <button onclick="document.body.style.backgroundColor = 'gold';">Gold</button>
+        </div>
+        
+        <hr>
+        <h2>Change Text Color</h2>
+        <div class="button-group">
+            <button onclick="document.body.style.color = 'red';">Red</button>
+            <button onclick="document.body.style.color = 'green';">Green</button>
+            <button onclick="document.body.style.color = 'blue';">Blue</button>
+            <button onclick="document.body.style.color = 'black';">Black</button>
+        </div>
+        
+        <hr>
+        <button class="reset-btn" onclick="document.body.style.backgroundColor = ''; document.body.style.color = '';">Reset Colors to Default</button>
+    </div>
+    <footer>
+        &copy; 2026 DASKALAKIS - Powered by Piraeus Bank
+    </footer>
+</body>
+</html>
